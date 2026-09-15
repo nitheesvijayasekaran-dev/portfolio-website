@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "homepage": "https://github.com/nitheesvijayasekaran-dev/portfolio-website#readme",
+  "bugs": {
+    "url": "https://github.com/nitheesvijayasekaran-dev/portfolio-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitheesvijayasekaran-dev/portfolio-website.git"
+  },
+  "license": "ISC",
+  "author": "Nithees",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
