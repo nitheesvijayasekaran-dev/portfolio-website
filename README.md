@@ -1,43 +1,189 @@
 # Personal Portfolio Website
 
-This project is a simple personal portfolio website created using HTML5. It showcases my profile, technical skills, and contact information.
+A responsive personal portfolio website built with **HTML5 and CSS3** to showcase my profile, technical skills, and contact information.
 
-## Objectives
+## 🚀 Project Overview
 
-- Learn HTML5 structure
-- Understand semantic HTML
-- Create internal navigation
-- Build a contact form
+This project was created as part of my HTML and CSS learning journey. It focuses on building a structured, accessible, and responsive webpage using semantic HTML and modern CSS techniques.
 
-## Setup Instructions
+The portfolio includes:
+
+- Personal introduction
+- Technical skills
+- Contact form
+- Internal navigation
+- Responsive design for mobile and desktop
+- Custom typography and styling
+
+## 🎯 Objectives
+
+- Understand the structure of a modern HTML5 document
+- Use semantic HTML elements effectively
+- Implement internal page navigation
+- Create and validate an HTML contact form
+- Work with images and accessibility using `alt` text
+- Learn CSS selectors and styling
+- Use Flexbox for responsive layouts
+- Implement hover effects
+- Create responsive designs using media queries
+- Work with custom fonts and color schemes
+
+## 🛠️ Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **Google Fonts**
+- **Node.js / npm**
+- **npx serve**
+
+## 📁 Project Structure
+
+```text
+portfolio-website/
+│
+├── index.html
+├── style.css
+├── README.md
+├── package.json
+├── package-lock.json
+│
+└── images/
+    └── Nithees.jpg
+```
+
+## ✨ Features
+
+### Semantic HTML
+
+The website uses semantic HTML5 elements including:
+
+- `<header>`
+- `<nav>`
+- `<main>`
+- `<section>`
+- `<footer>`
+
+This provides a clear and meaningful page structure.
+
+### Internal Navigation
+
+The navigation allows users to move between different sections of the same page:
+
+- About
+- Skills
+- Contact
+
+Example:
+
+```html
+<a href="#about">About</a>
+```
+
+connects to:
+
+```html
+<section id="about">
+```
+
+### Contact Form
+
+The portfolio includes a contact form with:
+
+- Name
+- Email
+- Message
+- Submit button
+
+HTML5 form validation is implemented using the `required` attribute and `type="email"`.
+
+### Responsive Design
+
+The website adapts to different screen sizes using CSS media queries.
+
+```css
+@media (max-width: 600px) {
+    /* Responsive styles */
+}
+```
+
+The layout has been tested on both desktop and mobile screen sizes.
+
+### Flexbox
+
+Flexbox is used to create the responsive skills layout:
+
+```css
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+```
+
+### Hover Effects
+
+Interactive hover effects are implemented for navigation links and the contact form button using the `:hover` pseudo-class.
+
+### Custom Font
+
+The website uses the **Poppins** font from Google Fonts to provide consistent and modern typography.
+
+## 🎨 Design
+
+The website uses a simple and consistent visual design with:
+
+- Dark header
+- Light page background
+- White content cards
+- Rounded corners
+- Circular profile image
+- Skill tags
+- Responsive spacing and typography
+
+## ⚙️ Setup and Installation
 
 ### Prerequisites
 
-- Install Node.js and npm.
-- Clone or download this project from GitHub.
-- Open the project folder in VS Code.
+Make sure you have the following installed:
 
-### Run the Project
+- [Node.js](https://nodejs.org/)
+- npm
+- VS Code or another code editor
+- A modern web browser
 
-Open the terminal inside the project folder and run:
+### Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd portfolio-website
+```
+
+3. Start the local development server:
 
 ```bash
 npx serve .
 ```
 
-## Code Structure
+4. Open the application in your browser:
 
-The project uses a simple HTML structure with the following files and folders:
+```text
+http://localhost:3000
+```
 
-- `index.html` - Main HTML file containing the portfolio website.
-- `README.md` - Documentation about the project, setup, and implementation.
-- `images/` - Contains images used in the portfolio.
+> **Note:** `localhost:3000` is a local development URL and is available only while the local server is running.
 
-### HTML Structure
+## 👨‍💻 Author
 
-- `<header>` - Contains the name, profession, and navigation.
-- `<nav>` - Contains internal navigation links for About, Skills, and Contact.
-- `<main>` - Contains the main content of the portfolio.
-- `<section>` - Separates the About, Skills, and Contact content.
-- `<form>` - Provides the contact form.
-- `<footer>` - Contains copyright information.
+**Nithees Vijayasekaran**
+
+Flutter Developer | Mobile App Developer
+
+---
+
+⭐ Built as part of my HTML & CSS learning journey.
