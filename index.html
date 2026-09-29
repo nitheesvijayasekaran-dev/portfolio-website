@@ -12,16 +12,24 @@
 
     <!-- Header -->
     <header>
-        <h1>Nithees Vijayasekaran</h1>
-        <p>Flutter Developer | Mobile App Developer</p>
+        <div class="header-container">
 
-        <!-- Navigation -->
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+            <div class="brand">
+                <span class="status-dot"></span>
+                <a href="#">Nithees Vijayasekaran</a>
+            </div>
 
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button id="themeButton" type="button" aria-label="Toggle theme">
+                ☾
+            </button>
+
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -30,14 +38,17 @@
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-
-            <img src="images/Nithees.jpg" alt="Profile picture of Nithees" width="180">
-
-            <p>
-                Hello! I'm Nithees, a Flutter developer with 4+ years of experience
-                building cross-platform mobile applications. I enjoy creating clean,
-                responsive, and user-friendly apps.
-            </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Nithees, a Flutter developer with 4+ years
+                        of experience building cross-platform mobile applications.
+                        I enjoy creating clean, responsive, and user-friendly
+                        applications with a focus on good architecture,
+                        state management, and reliable API integration.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Skills Section -->
@@ -64,17 +75,27 @@
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+            <form id="contactForm">
 
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
 
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+                <small id="nameError" class="error"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <small id="emailError" class="error"></small>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <small id="messageError" class="error"></small>
 
                 <button type="submit">Send Message</button>
+
+                <p id="successMessage"></p>
+
             </form>
         </section>
 
@@ -86,6 +107,8 @@
     <footer>
         <p>Email: nitheesvijayasekaran@gmail.com</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
